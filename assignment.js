@@ -12,6 +12,7 @@ for (var i = 1; i<=100;i++){
     }
 }
 console.log(odd);
+var even_num=even(num);
 function even(array){
     var Array=[];
     for(var i=0;i<array.length;i++){
@@ -22,7 +23,6 @@ function even(array){
     console.log(Array);
 }
 var num=[12,32,34,89,90];
-var even_num=even(num);
 function Odd(array){
     var Array=[];
     for(var i=0;i<array.length;i++){

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .main-Box{
+            background-color: gold;
+            width: 20em;
+            height: 20em;
+            position: relative;
+            }
+            .box{
+                background-color: blue;
+                width: 5em;
+                height: 5em;
+                position: absolute;
+            }
+    </style>
+</head>
+<body>
+    <div class="main-Box">
+        <div class="box" id="box"></div>
+    </div>
+</body>
+<script>
+    var pos=0;
+    var box=document.getElementById("box");
+    var t= setInterval(move,17);
+    function move(){
+        if(pos>=238){
+            clearInterval(t);
+        }
+        else{
+            pos+=1;
+        box.style.left=pos+"px";
+        box.style.top=pos+"px";
+        }
+    }
+   
+</script>
+</html>

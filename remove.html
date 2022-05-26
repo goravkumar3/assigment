@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            min-height: 100vh;
+        }
+        input{
+            padding: 10px;
+        }
+        .in{
+            display: flex;
+        }
+        .out1{
+          display: flex;
+          margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="in">
+        <input type="text" width="40%" id="text">
+    <button onclick="done()">done</button>
+    </div>
+    <div class="out1" id="out1">
+        <p id="out"></p>
+        <button id="button" onclick="remove()">delete</button>
+    </div>
+</body>
+<script src="remove.js"></script>
+</html>
